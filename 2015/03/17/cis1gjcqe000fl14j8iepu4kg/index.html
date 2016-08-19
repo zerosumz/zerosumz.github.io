@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="(loop (print (eval (read))))" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>warless webapp 전략 - (loop (print (eval (read))))</title><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee" type="text/css"><style type="text/css">.fb-share-button , .twitter-share-button {
+  vertical-align: text-bottom;
+  margin-left : 5px;
+}
+</style><link rel="stylesheet" href="/css/main.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "3df02cad-979e-4347-be4c-94fe98b99af9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></head><body><div id="fb-root"></div><script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=783844121725729&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><header class="head"><h1 class="head-title u-fl"><a href="/">(loop (print (eval (read))))</a></h1><h4 class="sub-title u-fl">;;닭집을 차리기 위한 여정</h4><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time datetime="2015-03-16T17:52:41.000Z" class="post__time">3월 17, 2015</time><h1 class="post__title"> <a href="/2015/03/17/cis1gjcqe000fl14j8iepu4kg/">warless webapp 전략</a><div style="float:right;"><div data-href="/2015/03/17/cis1gjcqe000fl14j8iepu4kg/" data-layout="button_count" class="fb-share-button"></div><a href="https://twitter.com/share" data-url="http://zerosumz.github.io/2015/03/17/cis1gjcqe000fl14j8iepu4kg/" data-via="k_racketeer" class="twitter-share-button"></a></div></h1></header><div class="post__main echo"><p><s>이런 접근이 나온지도 벌써 수년이 흘렀고, 몇년동안 써먹고 있는 방법이긴하지만 새삼스럽게 공개하자면</s></p>
+<p><a href="http://www.jamesward.com/2011/08/23/war-less-java-web-apps" target="_blank" rel="external">http://www.jamesward.com/2011/08/23/war-less-java-web-apps</a> 여기에 아주 잘 정리 되어 있다.</p>
+<p>요점은, embedded jetty 를 통해 main 메서드를 통해 ide 로도 실행할 수 있고, excutable jar 를 생성하여 실행할 수 도 있는 프로젝트를 구성하는 것.</p>
+<p>이 접근은 언뜻 생각하기에도 벌써 장점이 여럿 보인다.</p>
+<ul>
+<li>ide를 통한 실행은 별도로 컴파일 하지 않아도 된다 (incremental compile)</li>
+<li>또한 웹 리소스 파일들은 main 메서드에 의해 직접 참조되므로 복사할 필요가 없다.</li>
+<li>따라서 프로젝트 초기라면 (또 어느정도 규모가 있지 않다면) 웹어플리케이션을 정지하고 재구동하는데 5초 미만의 시간이 걸리게 된다.</li>
+</ul>
+<p>좀 더 작고 기민하게, 수수하지만 실용적인 방법으로 개발하고자 할 때 알맞겠다.</p>
+<blockquote>
+<p>jetty는 사실 고민할 필요도 없이 좋은 was다.<br><a href="https://wiki.eclipse.org/Jetty/Feature/Continuations" target="_blank" rel="external">https://wiki.eclipse.org/Jetty/Feature/Continuations</a></p>
+<p>물론 가장 기민한 것은 clojure 다.<br>이미 jetty를 쓰고 있기도 하고..<br>하지만 clojure 는 돈이 안되므로.</p>
+</blockquote>
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/jetty/" class="post__tag__link">jetty</a></li><li class="post__tag__item"><a href="/tags/warless/" class="post__tag__link">warless</a></li><li class="post__tag__item"><a href="/tags/webapp/" class="post__tag__link">webapp</a></li></ul><a href="/2015/03/17/cis1gjcqe000fl14j8iepu4kg/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript></div></div></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016 euhyen ~_~</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/2015/07/29/cis1gjcqz000ml14jarutul5i/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><a title="Next" href="/2015/03/14/cis1gjcqw000kl14jwmx1hyi8/" class="page-menu__link icon-arrow-right"></a></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
+j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})
+(document,"script","ehjanghexo","embed");
+</script></body></html>
