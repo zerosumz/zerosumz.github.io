@@ -1,18 +1,54 @@
-include _views/post
-include _views/menu
-extends _views/main
-
-block main
-  +post(page, 'post')
-  if config.disqus_shortname && page.comments
-    div.comments
-      div#disqus_thread
-        noscript.
-          Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-
-block head
-  title
-    = page.title + ' - ' + config.title
-
-block menu
-  +menu('post')
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="(loop (print (eval (read))))" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>하이 - (loop (print (eval (read))))</title><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee" type="text/css"><style type="text/css">.fb-share-button , .twitter-share-button {
+  vertical-align: text-bottom;
+  margin-left : 5px;
+}
+</style><link rel="stylesheet" href="/css/main.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "3df02cad-979e-4347-be4c-94fe98b99af9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></head><body><div id="fb-root"></div><script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=783844121725729&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><header class="head"><h1 class="head-title u-fl"><a href="/">(loop (print (eval (read))))</a></h1><h4 class="sub-title u-fl">;;닭집을 차리기 위한 여정</h4><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li><li class="head-nav__item"><a href="/2014/09/25/contrib/" class="head-nav__link">Contrib</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time datetime="2014-09-24T12:34:20.000Z" class="post__time">9월 24, 2014</time><h1 class="post__title"> <a href="/2014/09/24/하이/">하이</a><div style="float:right;"><div data-href="/2014/09/24/하이/" data-layout="button_count" class="fb-share-button"></div><a href="https://twitter.com/share" data-url="http://zerosumz.github.io/2014/09/24/하이/" data-via="k_racketeer" class="twitter-share-button"></a></div></h1></header><div class="post__main echo"><h2 id="첫글임"><a href="#첫글임" class="headerlink" title="첫글임."></a>첫글임.</h2><p>마크다운을 좋아하고<br>주로 emacs 등의 편집기를 써서 글쓰기를 좋아하는 사람들에게 괜찮은 툴 같다.</p>
+<p> <strong> 중국</strong> 냄새가 너무 많이 나긴 하지만..</p>
+<ul>
+<li>리스트 테스트<ul>
+<li>흠?</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Foo</span></span>&#123;</div><div class="line">    <span class="function">pubic <span class="keyword">void</span> <span class="title">bar</span><span class="params">()</span></span>&#123;</div><div class="line">	    System.out.println(<span class="string">"a"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">테이블</th>
+<th style="text-align:center">테스트</th>
+<th style="text-align:right">흠</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">안녕</td>
+<td style="text-align:center">난</td>
+<td style="text-align:right">웅이라구해</td>
+</tr>
+</tbody>
+</table>
+</div><footer class="post__foot u-cf"><a href="/2014/09/24/하이/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript></div></div></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016 euhyen ~_~</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/2014/09/25/OO에-대한-느낌적-느낌/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><span title="Next" class="page-menu__link icon-arrow-right page-menu__link--disabled"></span></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
+j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})
+(document,"script","ehjanghexo","embed");
+</script></body></html>
