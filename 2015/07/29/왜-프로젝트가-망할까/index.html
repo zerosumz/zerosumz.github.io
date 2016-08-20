@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="(loop (print (eval (read))))" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>왜 프로젝트가 망할까? - (loop (print (eval (read))))</title><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Handlee" type="text/css"><style type="text/css">.fb-share-button , .twitter-share-button {
+  vertical-align: text-bottom;
+  margin-left : 5px;
+}
+</style><link rel="stylesheet" href="/css/main.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "3df02cad-979e-4347-be4c-94fe98b99af9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></head><body><div id="fb-root"></div><script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=783844121725729&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><header class="head"><h1 class="head-title u-fl"><a href="/">(loop (print (eval (read))))</a></h1><h4 class="sub-title u-fl">;;닭집을 차리기 위한 여정</h4><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time datetime="2015-07-29T14:21:48.000Z" class="post__time">7월 29, 2015</time><h1 class="post__title"> <a href="/2015/07/29/왜-프로젝트가-망할까/">왜 프로젝트가 망할까?</a><div style="float:right;"><div data-href="/2015/07/29/왜-프로젝트가-망할까/" data-layout="button_count" class="fb-share-button"></div><a href="https://twitter.com/share" data-url="http://zerosumz.github.io/2015/07/29/왜-프로젝트가-망할까/" data-via="k_racketeer" class="twitter-share-button"></a></div></h1></header><div class="post__main echo"><p>빙 둘러 말하기로 프로젝트 위키에다가 써 보았다.<br>물론 프로젝트 위키에다가 썼으므로 팀원만 보겠지 ㅎㅎ…</p>
+<hr>
+<h3 id="스크럼-이걸-왜-하나요"><a href="#스크럼-이걸-왜-하나요" class="headerlink" title="스크럼 이걸 왜 하나요?"></a>스크럼 이걸 왜 하나요?</h3><blockquote>
+<p>원활한 개발을 방해하는 요소들은 셀 수 없이 많습니다. 하지만, 그런 방해 요소들을 적극적으로 해결하고자 하는 노력은 그에 비해 턱없이 부족합니다. 늦어지는 기획, 너무 잦은 회의, 본부장의 잦은 간섭, 협업 요청에 대한 동료의 무응답, 작업을 더디게하는 수많은 요소들은 오늘도 우리 주위에 산재해 있습니다. 하지만, 이런 것들에 문제를 제기하면 왠지 분위기가 어색해질 것 같고 눈치가 보여서 포기하고 맙니다. 결국 시간이 갈수록 즐겁게 개발 할 수 있는 환경은 사라져갑니다. 스크럼은 목표를 달성하는데 방해가 되는 요소들을 그 즉시 해결해야 한다고 이야기합니다.</p>
+</blockquote>
+<ul>
+<li><a href="http://resoneit.blogspot.kr/2012/10/blog-post_30.html" target="_blank" rel="external">http://resoneit.blogspot.kr/2012/10/blog-post_30.html</a></li>
+<li>현재 상황에서 우리 mcc-backoffice 개발팀은 온전한 프로젝트 매니징을 기대할 수 없는 상황 (내가 대충 땜빵하고 있지만.. @yh.jang )</li>
+<li>또한 언제나 그렇듯이 깊은 이해가 없는 방법론 도입은 그다지 효과가 없다.</li>
+<li>따라서 앞서 인용한 <code>개발저해요소</code> 를 제거하는 데 촛점을 맞추고 나머지를 천천히 도입해야 할 것.<ul>
+<li>프로젝트 팀이 아닌이상 프로젝트에 관여할 수 없어야 한다.<ul>
+<li>누구라도 프로젝트에 관여하려면, 팀의 일원이 되어야 한다.</li>
+<li>팀의 일원이 되었으면, 협업 방법을 익히고 커뮤니케이션 하라.</li>
+<li>협업 방법을 익혔으면, 자신이 하는 일을 기록하고 그 일을 책임져라.</li>
+</ul>
+</li>
+<li>프로젝트 리더가 프로젝트 팀을 구성한다.<ul>
+<li>생각보다 협업은 어렵고 팀은 성장할 시간이 필요하다.</li>
+<li>모든 프로젝트는 팀의 성장도에 따라 다른 퍼포먼스를 보일 것이다.</li>
+</ul>
+</li>
+<li>스프린트가 끝나기 전에 제품 사양이 변경되는 경우가 없어야 한다.<ul>
+<li>제품이 나오기 전에, 제품의 유효성은 알 수 없다.</li>
+<li>프로젝트 팀은 매 스프린트 마다 피드백 가능한 <code>작동하는</code> 프로토타입을 만드는것을 목표로 한다.</li>
+<li>제품 사양 변경은 프로토타입을 검토하고 나서 해도 절대 늦지 않다.</li>
+</ul>
+</li>
+<li>프로젝트의 모든 부분이 테스트 가능한 상태를 유지해야 한다<ul>
+<li>급격한 사양변경 혹은 제품 기반이 변경되었을때 이를 견디게 해주는 필수요소다.</li>
+<li>급격한 변경에도 견딜수 있으므로 파괴적인 구조개선을 통해 단순하고 견고한 체제를 구축하는것이 가능.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/팀/" class="post__tag__link">팀</a></li><li class="post__tag__item"><a href="/tags/프로젝트/" class="post__tag__link">프로젝트</a></li><li class="post__tag__item"><a href="/tags/스크럼/" class="post__tag__link">스크럼</a></li><li class="post__tag__item"><a href="/tags/저해요소/" class="post__tag__link">저해요소</a></li></ul><a href="/2015/07/29/왜-프로젝트가-망할까/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><div class="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript></div></div></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016 euhyen ~_~</div><menu class="page-menu u-fr"><li class="page-menu__item"><a title="Previous" href="/2015/10/03/클로져-스마트폰/" class="page-menu__link icon-arrow-left"></a></li><li class="page-menu__item"><a title="Next" href="/2015/03/17/warless-webapp/" class="page-menu__link icon-arrow-right"></a></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
+j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})
+(document,"script","ehjanghexo","embed");
+</script></body></html>
