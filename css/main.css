@@ -1,5 +1,6 @@
 @import url("http://fonts.googleapis.com/earlyaccess/hanna.css");
 @import url("http://fonts.googleapis.com/earlyaccess/jejugothic.css");
+@import url("https://cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothic.css");
 @import 'https://fonts.googleapis.com/css?family=Ubuntu+Mono';
 /* ==========================================================================
    Init
@@ -212,10 +213,10 @@ html {
   color: #666;
 }
 body {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 17.6px;
+  font-size: 1.1rem;
   line-height: 1.6em;
-  font-family: Malgun Gothic, Apple SD Gothic Neo, Georgia, Palatino, serif;
+  font-family: 'Nanum Barun Gothic', Malgun Gothic, Apple SD Gothic Neo, Georgia, Palatino, serif;
 }
 code,
 kbd,
