@@ -1,5 +1,6 @@
 @import url("http://fonts.googleapis.com/earlyaccess/hanna.css");
 @import url("http://fonts.googleapis.com/earlyaccess/jejugothic.css");
+@import url("https://fonts.googleapis.com/css?family=UbuntuMono");
 /* ==========================================================================
    Init
    ========================================================================== */
@@ -220,7 +221,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Source Code Pro', Monaco, Consolas, 'Liberation Mono', Courier, monospace, serif;
+  font-family: 'Ubuntu Mono', 'Source Code Pro', Monaco, Consolas, 'Liberation Mono', Courier, monospace, serif;
 }
 a {
   color: #258fb8;
